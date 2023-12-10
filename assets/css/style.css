@@ -1,0 +1,231 @@
+
+:root{
+	--color-primary:#fcdb00;
+	--text-color-primary:#010101;
+	--text-color-secondary:#313841;
+	--text-color-third:#555555;
+	--text-color-four:#898989;
+	--color-dark:#000;
+	--color-white:#fff;
+}
+
+/*----------hero img css starts here--------------*/
+
+.heroImg{
+	padding:75px 0 105px;
+	background-color:var(--color-primary);
+}
+
+.mainheader.navbar-default{
+	background-color:transparent;
+	border-color:transparent;
+
+}
+
+.mainheader .navbar-nav>li>a {
+    color: var(--text-color-primary);
+	font-size:22px;
+	font-weight:bold;
+	text-transform:capitalize;
+	position:relative;
+}
+
+.mainheader .navbar-nav li a::after{
+	content: "";
+	background-color: var(--color-dark);
+	height:5px;
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:0;
+	transition:all .7s ease-in-out;
+}
+
+.mainheader .navbar-nav li a:hover::after{
+	width:100%;
+}
+
+.inspiration{
+	margin-top:70px;
+}
+
+.brandicon li{
+	display:inline-block;
+	margin-right:35px;
+}
+
+.brandicon li a i{
+	color:var(--text-color-primary);
+	transition: all .4s ease-in-out;
+}
+
+.brandicon>li>a:hover i,
+.brandicon>li>a:focus i,
+.brandicon>li>a:active i{
+	transform:scale(1.2) rotate(360deg);
+}
+
+/*---------features css start here----------*/
+
+.features{
+	padding:120px 0 80px;
+}
+
+.features .sec-heading{
+	margin-bottom:90px;
+}
+
+.ourThumbnail{
+	margin-bottom:90px;
+}
+
+.ourThumbnail h4{
+	margin:0 0 15px;
+	font-size:22px;
+	color:var(--text-color-primary);
+}
+
+.ourThumbnail p{
+	color:var(--text-color-four);
+	font-size:16px;
+}
+
+/*------------keep InTouch css starts here-----------*/
+
+.keepInTouch{
+	background-color:var(--text-color-primary);
+	padding:95px 0 140px;
+}
+
+.keepInTouch .pri-heading{
+	color:var(--color-primary);
+}
+
+.keepInTouch .sec-heading{
+	color:var(--color-four);
+	margin-bottom:45px;
+}
+
+.signIn .email{
+	width: calc(100% - 180px);
+	display: inline-block;
+	margin-right: 25px;
+	height:50px;
+}
+
+.signIn .email::placeholder{
+	color:var{--text-color-four};
+}
+
+.signIn{
+	margin-bottom:75px;
+}
+
+.signIn .btn{
+	height:50px;
+	width:150px;
+	background-color:var(--color-primary);
+	color:var(--text-color-primary);
+	text-transform:uppercase;
+	font-weight:bold;
+	border:1px solid var(--color-primary);
+}
+
+.signIn .btn:hover,
+.signIn .btn:focus,
+.signIn .btn:active{
+	color:var(--color-primary);
+	background-color:var(--text-color-primary);
+}
+
+.keepInTouch .brandicon li a i{
+	color:var(--color-primary);
+}
+
+.keepInTouch .brandicon{
+	margin-bottom:135px;
+}
+
+.address li, .address a{
+	color:var(--color-white);
+	font-size:16px;
+	text-transform:capitalize;
+}
+
+
+@media all and (min-width:768px){
+	.mainheader .navbar-brand{
+	padding-top:0;
+	padding-bottom:0;
+	}
+	
+	.mainheader{
+		margin-bottom:55px;
+	}
+	
+	.mainheader .navbar-nav>li{
+		float:left;
+		margin-left:30px;
+	}
+	
+	.ipad{
+		margin-left:90px;
+	}
+}
+
+@media all and (max-width:768px){
+	.section{
+		padding:50px 0;
+	}
+	
+	.mainheader .navbar-brand{
+		padding:0 15px;
+	}
+	
+	.mainheader .navbar-toggle{
+		border-color:var(--text-color-primary);
+	}
+	
+	.mainheader .navbar-toggle .icon-bar{
+		background-color:var(--text-color-primary);
+	}
+	
+	.inspiration{
+		margin:0 0 50px;
+	}
+	
+	.features .sec-heading{
+		margin-bottom:50px;
+	}
+	
+	.ourThumbnail{
+		margin-bottom:20px;
+	}
+	
+	.signIn .email{
+		width:100%;
+		margin:0 0 20px;
+	}
+	
+	.signIn .btn{
+		width:100%;
+	}
+	
+	.signIn{
+		margin-bottom:30px;
+	}
+	
+	.keepInTouch .brandicon{
+		margin-bottom:30px;
+	}
+	
+	.brandicon li{
+		margin-right:30px;
+	}
+}
+
+@media all and(max-width:600px){
+	.ipad{
+		width:100%;
+	}
+}
